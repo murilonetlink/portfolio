@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Desenvolvedor Full Stack</title>
+    <meta name="description" content="Portfólio apresentando Lavazap, AIDoc Hub e palestras na SUCESU.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#ec4899',
+                        dark: '#0f172a',
+                        card: '#1e293b',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body class="bg-dark text-slate-300 font-sans selection:bg-primary selection:text-white">
+
+    <nav class="fixed w-full z-40 glass-nav top-0 start-0 transition-all duration-300" id="main-nav">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between p-4">
+            <a href="#" class="flex items-center space-x-2 group">
+                <span class="text-2xl font-bold font-display text-white group-hover:text-primary transition-colors">&lt;Dev/&gt;</span>
+            </a>
+            
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none transition-colors" id="menu-btn">
+                <span class="sr-only">Menu</span>
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+            
+            <div class="hidden w-full md:block md:w-auto transition-all duration-300 ease-in-out" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-700 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-slate-800 md:bg-transparent">
+                    <li><a href="#home" class="nav-link block py-2 px-3 text-white bg-primary rounded md:bg-transparent md:text-primary md:p-0">Início</a></li>
+                    <li><a href="#sobre" class="nav-link block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:hover:text-primary md:p-0 transition-colors">Sobre</a></li>
+                    <li><a href="#destaques" class="nav-link block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:hover:text-primary md:p-0 transition-colors">Projetos</a></li>
+                    <li><a href="#eventos" class="nav-link block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:hover:text-primary md:p-0 transition-colors">Eventos</a></li>
+                    <li><a href="#contato" class="nav-link block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:hover:text-primary md:p-0 transition-colors">Contato</a></li>
+                    <li>
+                        <a href="assets/docs/Murilo Costa - CV.pdf" download class="nav-link block py-2 px-3 text-primary border border-primary rounded hover:bg-primary hover:text-white transition-colors">
+                            <i class="fa-solid fa-download mr-1"></i> CV
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
+        <div class="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl -z-10 animate-pulse"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -z-10"></div>
+
+        <div class="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left">
+                <div class="flex flex-wrap justify-center md:justify-start gap-3 mb-6">
+                    <span class="py-1 px-3 rounded-full bg-slate-800 border border-slate-700 text-sm font-medium text-primary">
+                        Full Stack Developer
+                    </span>
+                    <span class="py-1 px-3 rounded-full bg-slate-800 border border-slate-700 text-sm font-medium text-sky-400">
+                        Data Scientist
+                    </span>
+                </div>
+
+                <p class="text-xl md:text-2xl text-slate-300 font-medium mb-2">
+                    Olá, eu sou <span class="text-white font-bold">Murilo Costa</span> 👋
+                </p>
+
+                <h1 class="text-4xl md:text-6xl font-bold font-display text-white mb-6 leading-tight">
+                    Transformando dados em <br>
+                    <span class="gradient-text">soluções inteligentes.</span>
+                </h1>
+                
+                <p class="text-lg text-slate-400 mb-8 max-w-lg mx-auto md:mx-0">
+                    Estudante de Ciência de Dados e desenvolvedor focado em criar produtos digitais escaláveis e automações que geram valor real.
+                </p>
+
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                    <a href="#destaques" class="px-8 py-3 bg-primary hover:bg-indigo-600 text-white font-semibold rounded-lg transition shadow-lg shadow-indigo-500/30">
+                        Ver Portfolio
+                    </a>
+                    <a href="https://github.com/murilonetlink" target="_blank" class="px-8 py-3 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-lg border border-slate-700 transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/murilonetlink" target="_blank" class="px-8 py-3 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-lg border border-slate-700 transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+            
+            <div class="flex-1 flex justify-center relative">
+                <div class="w-64 h-64 md:w-80 md:h-80 relative z-10">
+                    <img src="assets/img/profile_pic.jpeg" 
+                         alt="Foto de Perfil" 
+                         class="w-full h-full object-cover rounded-full border-4 border-slate-700 shadow-2xl">
+
+                    <div class="absolute -bottom-4 -right-4 bg-slate-800 p-4 rounded-xl border border-slate-700 shadow-xl flex items-center gap-3 animate-bounce" style="animation-duration: 3s;">
+                        <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                        <span class="text-sm font-bold text-white">Open to Work</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 border-t border-slate-800 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="text-center text-slate-400 text-sm mb-6 uppercase tracking-widest">Tecnologias que domino</p>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+                <div class="text-center group">
+                    <i class="fa-brands fa-python text-4xl text-yellow-300 mb-2 group-hover:scale-110 transition"></i>
+                    <p class="text-xs text-slate-400">Python</p>
+                </div>
+                <div class="text-center group">
+                    <i class="fa-solid fa-database text-4xl text-blue-400 mb-2 group-hover:scale-110 transition"></i>
+                    <p class="text-xs text-slate-400">SQL</p>
+                </div>
+                <div class="text-center group">
+                    <i class="fa-brands fa-react text-4xl text-cyan-400 mb-2 group-hover:scale-110 transition"></i>
+                    <p class="text-xs text-slate-400">React</p>
+                </div>
+                <div class="text-center group">
+                    <i class="fa-solid fa-chart-simple text-4xl text-yellow-500 mb-2 group-hover:scale-110 transition"></i>
+                    <p class="text-xs text-slate-400">Power BI</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-20 bg-dark relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-10"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary/5 rounded-full blur-3xl -z-10"></div>
+
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold font-display text-white mb-6">
+                        Mais que código, <br>
+                        <span class="text-primary">estratégia e dados.</span>
+                    </h2>
+                    <div class="space-y-4 text-slate-400 text-lg leading-relaxed">
+                        <p>
+                            Atualmente cursando o <strong class="text-white">5º período de Ciência de Dados</strong> na FAE e atuando como estagiário em Excelência Operacional na <strong class="text-white">Neodent</strong>.
+                        </p>
+                        <p>
+                            Também trabalho como free-lancer no <strong class="text-white">LavaZap</strong>, uma empresa <strong class="text-white">Saas</strong> que entrega uma plataforma completa para empresas de lava-car, permitindo o gerenciamento de agendamentos, relatórios essenciais para admnistração do lavacar e etc.
+                        </p>
+                        <p>
+                            Minha jornada combina a lógica analítica da ciência de dados com a criatividade do desenvolvimento Full Stack. Não me contento apenas em "fazer funcionar"; meu foco é criar automações e sistemas que tragam inteligência para o negócio e resolvam dores reais dos usuários.
+                        </p>
+                        <p>
+                            Seja construindo um SaaS do zero ou otimizando processos industriais com IA, busco sempre a excelência técnica.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid gap-4">
+                    <div class="bg-card p-6 rounded-xl border border-slate-700 hover:border-primary transition-colors group">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold">Neodent</h4>
+                                <p class="text-sm text-slate-400">Estágio em Operational Excellence</p>
+                                <p class="text-xs text-slate-500 mt-1">Foco em automação e análise de dados.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-card p-6 rounded-xl border border-slate-700 hover:border-secondary transition-colors group">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold">FAE Centro Universitário</h4>
+                                <p class="text-sm text-slate-400">Ciência de Dados para Negócios</p>
+                                <p class="text-xs text-slate-500 mt-1">5º Período • Em andamento</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-card p-6 rounded-xl border border-slate-700 hover:border-sky-500 transition-colors group">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-sky-500/10 flex items-center justify-center text-sky-500 group-hover:bg-sky-500 group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold">Curitiba, PR</h4>
+                                <p class="text-sm text-slate-400">Disponível para projetos locais e remotos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="destaques" class="py-24 px-4 bg-dark border-t border-slate-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold font-display text-white mb-2">Projetos Principais</h2>
+                    <p class="text-slate-400">Cases que geram valor real.</p>
+                </div>
+                <a href="https://github.com" class="hidden md:flex items-center text-primary hover:text-white transition mt-4 md:mt-0">
+                    Ver todos no GitHub <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                <div class="bg-card rounded-2xl overflow-hidden border border-slate-700 card-hover group h-full flex flex-col">
+                    <div class="h-64 relative overflow-hidden bg-slate-800">
+                        <img src="assets/img/lavazap.png" 
+                             alt="Lavazap Preview" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-700 cursor-zoom-in img-zoom"
+                             title="Clique para expandir">
+                        <div class="img-overlay pointer-events-none"></div>
+                        <div class="absolute bottom-4 left-4 pointer-events-none">
+                            <i class="fa-solid fa-car-side text-3xl text-white drop-shadow-lg"></i>
+                        </div>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-white">Lavazap</h3>
+                            <span class="bg-blue-500/20 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded border border-blue-500/20">SaaS</span>
+                        </div>
+                        <p class="text-slate-400 mb-6 flex-1">
+                            Plataforma de agendamento para lava-cars. Resolve a desorganização de horários e automatiza lembretes via WhatsApp, aumentando o faturamento dos proprietários.
+                        </p>
+                        <div class="mt-auto">
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-slate-800 rounded text-xs text-slate-300 font-mono">React</span>
+                                <span class="px-3 py-1 bg-slate-800 rounded text-xs text-slate-300 font-mono">Node.js</span>
+                                <span class="px-3 py-1 bg-slate-800 rounded text-xs text-slate-300 font-mono">Postgres</span>
+                            </div>
+                            <div class="flex gap-4">
+                                <a href="https://lavazapapp.com.br/" class="text-white hover:text-primary font-medium text-sm transition">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-card rounded-2xl overflow-hidden border border-slate-700 card-hover group h-full flex flex-col">
+                    <div class="h-64 relative overflow-hidden bg-slate-800">
+                        <img src="assets/img/AIDocHub.jpeg" 
+                             alt="AIDoc Hub Preview" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-700 cursor-zoom-in img-zoom"
+                             title="Clique para expandir">
+                        <div class="img-overlay pointer-events-none"></div>
+                        <div class="absolute bottom-4 left-4 pointer-events-none">
+                            <i class="fa-solid fa-brain text-3xl text-white drop-shadow-lg"></i>
+                        </div>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-white">AIDoc Hub</h3>
+                            <span class="bg-purple-500/20 text-purple-300 text-xs font-semibold px-2.5 py-1 rounded border border-purple-500/20">IA / LLM</span>
+                        </div>
+                        <p class="text-slate-400 mb-6 flex-1">
+                            Ferramenta que utiliza LLMs para gerar documentação técnica automaticamente. Reduz o tempo de escrita de docs em 70% para equipes de desenvolvimento.
+                        </p>
+                        <div class="mt-auto">
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-slate-800 rounded text-xs text-slate-300 font-mono">Python</span>
+                                <span class="px-3 py-1 bg-slate-800 rounded text-xs text-slate-300 font-mono">OpenAI</span>
+                                <span class="px-3 py-1 bg-slate-800 rounded text-xs text-slate-300 font-mono">FastAPI</span>
+                            </div>
+                            <div class="flex gap-4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="eventos" class="py-20 px-4 bg-gradient-to-b from-dark to-slate-900 relative">
+        <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(#6366f1 1px, transparent 1px); background-size: 30px 30px;"></div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="text-center mb-12">
+                <span class="text-primary font-semibold tracking-wider uppercase text-sm">Community & Speaking</span>
+                <h2 class="text-3xl md:text-5xl font-bold font-display text-white mt-2">Compartilhando Conhecimento</h2>
+            </div>
+
+            <div class="bg-slate-800/50 rounded-3xl border border-slate-700 overflow-hidden shadow-2xl">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="p-8 md:p-12 flex flex-col justify-center">
+                        <div class="inline-block px-3 py-1 bg-pink-500/20 text-pink-300 rounded w-fit text-sm font-semibold mb-6">
+                            SUCESU 2025
+                        </div>
+                        <h3 class="text-3xl font-bold text-white mb-4">
+                            Mesa Redonda | IA em Debate
+                        </h3>
+                        <p class="text-slate-300 text-lg mb-8 leading-relaxed">
+                            Apresentação realizada no palco de inovação da SUCESU. Discuti os desafios técnicos do AIDoc Hub e como a inteligência artificial generativa está mudando o fluxo de trabalho dos desenvolvedores.
+                        </p>
+                        <div class="flex gap-4">
+                        </div>
+                    </div>
+                    <div class="relative h-64 md:h-auto bg-slate-900">
+                         <img src="assets/img/Sucesu.jpg" 
+                          alt="Apresentação SUCESU" 
+                          class="w-full h-full object-cover opacity-80 hover:opacity-100 transition duration-500 cursor-zoom-in img-zoom">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="py-12 border-t border-slate-800 bg-dark">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold text-white mb-6">Vamos construir algo juntos?</h2>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://github.com/murilonetlink" class="social-icon w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 hover:text-white hover:bg-primary transition duration-300">
+                    <i class="fa-brands fa-github text-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/murilonetlink" class="social-icon w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 hover:text-white hover:bg-blue-600 transition duration-300">
+                    <i class="fa-brands fa-linkedin-in text-xl"></i>
+                </a>
+                <a href="mailto:murilosou15@gmail.com" class="social-icon w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 hover:text-white hover:bg-red-500 transition duration-300">
+                    <i class="fa-solid fa-envelope text-xl"></i>
+                </a>
+            </div>
+            <p class="text-slate-500 text-sm">
+                &copy; <span id="year"></span> Murilo Costa. | Desenvolvido com Tailwind CSS.
+            </p>
+        </div>
+    </footer>
+
+    <div id="image-modal" class="fixed inset-0 z-[100] bg-black/90 hidden flex items-center justify-center p-4 backdrop-blur-sm opacity-0 transition-opacity duration-300" aria-hidden="true">
+        <button id="close-modal" class="absolute top-4 right-4 text-white hover:text-primary transition-colors z-[110] bg-black/50 rounded-full w-10 h-10 flex items-center justify-center">
+            <i class="fa-solid fa-xmark text-2xl"></i>
+        </button>
+        
+        <div class="relative w-full h-full flex items-center justify-center" id="modal-content">
+            <img id="modal-img" src="" alt="Expanded Project" class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl scale-95 transition-transform duration-300">
+            
+            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/70 px-4 py-2 rounded-full text-white text-sm opacity-0 transition-opacity duration-300" id="modal-caption">
+                Visualização do Projeto
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.gradient-text {
+    background: linear-gradient(to right, #818cf8, #e879f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.3);
+}
+
+.glass-nav {
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 23, 42, 0.9), transparent);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Garante que o overlay não bloqueie o clique na imagem */
+}
+
+.group:hover .img-overlay {
+    opacity: 0.6;
+}
+
+/* Classe utilitária para quando o modal estiver aberto */
+body.modal-open {
+    overflow: hidden; /* Impede o scroll da página de fundo */
+}
