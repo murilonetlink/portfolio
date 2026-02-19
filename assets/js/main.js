@@ -85,10 +85,50 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Fechar com a tecla ESC
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
             closeModal();
         }
     });
+if (typeof tsParticles !== 'undefined') {
+        tsParticles.load("tsparticles", {
+            preset: "links",
+            background: {
+                color: "transparent",
+            },
+            particles: {
+                color: { value: "#6366f1" },
+                links: {
+                    color: "#6366f1",
+                    distance: 150,
+                    enable: true,
+                    opacity: 0.2,
+                    width: 1,
+                },
+                move: {
+                    enable: true,
+                    speed: 1,
+                },
+                number: {
+                    value: 40,
+                },
+                opacity: { value: 0.3 },
+                size: { value: 2 },
+            },
+            interactivity: {
+                events: {
+                    onHover: {
+                        enable: true,
+                        mode: "grab",
+                    },
+                },
+                modes: {
+                    grab: {
+                        distance: 200,
+                        links: { opacity: 0.5 }
+                    }
+                }
+            }
+        });
+    }
 });

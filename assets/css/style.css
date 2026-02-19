@@ -27,14 +27,13 @@
     background: linear-gradient(to top, rgba(15, 23, 42, 0.9), transparent);
     opacity: 0.8;
     transition: opacity 0.3s ease;
-    pointer-events: none; /* Garante que o overlay não bloqueie o clique na imagem */
+    pointer-events: none;
 }
 
 .group:hover .img-overlay {
     opacity: 0.6;
 }
 
-/* Classe utilitária para quando o modal estiver aberto */
 body.modal-open {
-    overflow: hidden; /* Impede o scroll da página de fundo */
+    overflow: hidden;
 }
