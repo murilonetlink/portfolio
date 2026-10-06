@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Murilo Costa · software, dados e processos</title>
+<meta name="description" content="Portfólio de Murilo Costa: LavaZap, AIDoc Hub, uma mesa redonda na SUCESU e gráficos feitos com os próprios dados do GitHub.">
+<meta name="theme-color" content="#f3f0e6">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=IBM+Plex+Mono:wght@400;500;600&family=Reenie+Beanie&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/novo.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <filter id="duo" color-interpolation-filters="sRGB">
+    <feColorMatrix type="matrix" values=".2126 .7152 .0722 0 0  .2126 .7152 .0722 0 0  .2126 .7152 .0722 0 0  0 0 0 1 0"/>
+    <feComponentTransfer>
+      <feFuncR type="table" tableValues=".07 .99"/>
+      <feFuncG type="table" tableValues=".14 .98"/>
+      <feFuncB type="table" tableValues=".55 .94"/>
+    </feComponentTransfer>
+  </filter>
+</svg>
+
+<header class="strip">
+  <div class="wrap strip__in">
+    <a class="strip__brand" href="#capa">Murilo Costa <span>portfólio</span></a>
+    <nav aria-label="Índice">
+      <ol>
+        <li><a href="#quem"><b>02</b>quem</a></li>
+        <li><a href="#lavazap"><b>03</b>lavazap</a></li>
+        <li><a href="#aidoc"><b>04</b>aidoc hub</a></li>
+        <li><a href="#arquivo"><b>05</b>arquivo</a></li>
+        <li><a href="#dados"><b>06</b>dados</a></li>
+        <li><a href="#palco"><b>07</b>palco</a></li>
+        <li><a href="#contato"><b>08</b>contato</a></li>
+      </ol>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- 01 · CAPA -->
+<section class="capa" id="capa" aria-labelledby="capa-t">
+  <div class="wrap">
+    <p class="capa__top mono"><span>Edição 01 / 2026</span><span>Curitiba, PR</span><span>Tiragem: 1 link</span></p>
+
+    <div class="capa__grid">
+      <div class="capa__main">
+        <h1 class="capa__name" id="capa-t"><span>Murilo</span> <span>Costa</span></h1>
+        <p class="capa__lede">Desenvolvo software, analiso dados e procuro o que dá pra simplificar num processo.</p>
+        <p class="capa__roles mono">Full stack · Ciência de Dados · Excelência Operacional</p>
+      </div>
+
+      <figure class="polaroid">
+        <span class="tape" aria-hidden="true"></span>
+        <div class="duo-pair polaroid__photo">
+          <img src="assets/img/profile_pic.jpeg" alt="Selfie de Murilo ao ar livre, num parque, com o cabelo ondulado e uma mochila nos ombros." width="757" height="1008">
+          <img class="duo" src="assets/img/profile_pic.jpeg" alt="" aria-hidden="true" width="757" height="1008">
+        </div>
+        <p class="stamp"><span>Aberto a projetos</span><small>Curitiba + remoto</small></p>
+        <figcaption class="hand">o autor, em tinta azul</figcaption>
+      </figure>
+    </div>
+
+    <nav class="indice" aria-labelledby="indice-t">
+      <div class="indice__head">
+        <h2 class="mono" id="indice-t">Nesta edição</h2>
+        <p class="indice__note" aria-hidden="true"><span class="hand">começa por aqui</span><svg class="arr" width="76" height="46" viewBox="0 0 76 46" data-arrow="6,6,70,34,-14"></svg></p>
+      </div>
+      <ol>
+        <li><a href="#quem"><span>Quem escreve isto</span><i aria-hidden="true"></i><b>02</b></a></li>
+        <li><a href="#lavazap"><span>LavaZap: a agenda do lava-car, box por box</span><i aria-hidden="true"></i><b>03</b></a></li>
+        <li><a href="#aidoc"><span>AIDoc Hub: documentação gerada por LLM</span><i aria-hidden="true"></i><b>04</b></a></li>
+        <li><a href="#arquivo"><span>O arquivo: o resto dos projetos, em caixas</span><i aria-hidden="true"></i><b>05</b></a></li>
+        <li><a href="#dados"><span>Meus dados, em papel quadriculado</span><i aria-hidden="true"></i><b>06</b></a></li>
+        <li><a href="#palco"><span>Uma mesa redonda na SUCESU</span><i aria-hidden="true"></i><b>07</b></a></li>
+        <li><a href="#contato"><span>Tem um processo bagunçado?</span><i aria-hidden="true"></i><b>08</b></a></li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<!-- 02 · QUEM -->
+<section class="quem" id="quem" aria-labelledby="quem-t">
+  <div class="wrap quem__grid">
+    <div class="quem__text">
+      <p class="folio mono">p. 02</p>
+      <h2 class="h2" id="quem-t">Quem escreve isto</h2>
+      <p class="dropcap">Sou o Murilo. Estou no 5º período de Ciência de Dados para Negócios na FAE, estagio em <span class="mark-circle" data-scribble="circle" data-color="red">Excelência Operacional</span> na Neodent, com foco em automação e análise de dados, e desenvolvo o LavaZap como freelancer.</p>
+      <p>O que me interessa é a parte do meio: pegar um processo que dá trabalho, achar onde está o desperdício e resolver com o menor software possível. Fazer funcionar é o mínimo; quero entender por que o problema existia.</p>
+      <p class="quem__note hand" aria-hidden="true">o círculo vermelho: é de lá que vem o A3</p>
+    </div>
+
+    <aside class="ficha" aria-label="Ficha">
+      <h3 class="ficha__t mono">Ficha</h3>
+      <dl>
+        <div><dt>Nome</dt><dd>Murilo Costa</dd></div>
+        <div><dt>Formação</dt><dd>Ciência de Dados para Negócios, FAE (5º período)</dd></div>
+        <div><dt>Estágio</dt><dd>Excelência Operacional, Neodent</dd></div>
+        <div><dt>Freela</dt><dd>LavaZap, SaaS para lava-car</dd></div>
+        <div><dt>Ferramentas</dt><dd>Python, SQL, React, Power BI</dd></div>
+        <div><dt>Cidade</dt><dd>Curitiba, PR</dd></div>
+        <div><dt>Disponível</dt><dd>Projetos locais e remotos</dd></div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<!-- 03–04 · CASOS (A3) -->
+<section class="casos" aria-labelledby="casos-t">
+  <div class="wrap">
+    <header class="casos__head">
+      <p class="folio mono">p. 03–04</p>
+      <h2 class="h2" id="casos-t">Os dois <span class="uline" data-scribble="underline">principais</span></h2>
+      <p>Cada um abre numa folha A3, o formato que uso na Excelência Operacional: contexto, problema, meta, o que foi feito e o resultado.</p>
+    </header>
+
+    <article class="proj" id="lavazap" aria-labelledby="p-lavazap-t">
+      <div class="proj__fig"><img src="assets/img/lavazap.png" alt="Tela de agenda do LavaZap, com uma coluna por box e um cartão por agendamento." width="1920" height="991" loading="lazy" decoding="async"></div>
+      <div class="proj__body">
+        <p class="proj__kicker mono"><b>01</b>SaaS para lava-car</p>
+        <h3 class="proj__title" id="p-lavazap-t">LavaZap: a agenda do lava-car, box por box</h3>
+        <p>Plataforma para empresas de lava-car: agenda do dia com uma coluna por box, lembretes automáticos por WhatsApp e relatórios para a administração.</p>
+        <p class="proj__stack mono">React · Python · Postgres</p>
+        <button class="proj__open" type="button" data-pasta="pasta-lavazap" aria-haspopup="dialog">Abrir a folha A3 →</button>
+      </div>
+    </article>
+
+    <dialog class="dossie" id="pasta-lavazap" aria-labelledby="a3-1-t">
+      <form method="dialog" class="dossie__bar"><span class="mono">Principal 01 · folha A3</span><button class="dossie__x mono">Fechar ×</button></form>
+      <div class="a3__sheet">
+        <header class="a3__head">
+          <p class="a3__no"><span class="mono">A3</span><b>01</b></p>
+          <h3 class="a3__title" id="a3-1-t">LavaZap: a agenda do lava-car, box por box</h3>
+          <dl class="a3__meta">
+            <div><dt>Tipo</dt><dd>SaaS para lava-car</dd></div>
+            <div><dt>Papel</dt><dd>Freelancer, desenvolvimento</dd></div>
+            <div><dt>Stack</dt><dd>React · Python · Postgres</dd></div>
+          </dl>
+        </header>
+
+        <div class="a3__grid">
+          <section class="cell">
+            <h4><i>1</i>Contexto</h4>
+            <p>Plataforma para empresas de lava-car: agendamentos, relatórios para a administração e o que mais a operação pedir.</p>
+          </section>
+          <section class="cell">
+            <h4><i>2</i>Problema</h4>
+            <p>Horários desorganizados: quem entra em qual box, e quando.</p>
+          </section>
+          <section class="cell">
+            <h4><i>3</i>Meta</h4>
+            <p>Uma agenda que o dono entende de relance, com lembrete automático para o cliente e relatório pronto.</p>
+          </section>
+          <section class="cell cell--wide">
+            <h4><i>4</i>O que foi feito</h4>
+            <ul>
+              <li>Agenda do dia com uma coluna por box e filtros por serviço e por box.</li>
+              <li>Cada cartão traz horário, cliente, serviço, carro, placa e duração.</li>
+              <li>Lembretes automáticos via WhatsApp e relatórios para a administração.</li>
+            </ul>
+          </section>
+          <section class="cell">
+            <h4><i>5</i>Resultado</h4>
+            <p>Objetivo do produto: mais faturamento para o dono do lava-car.</p>
+            <p class="sticky" data-todo>Falta 1 número real aqui. Ex.: faltas antes e depois do lembrete.<small>TODO · tirar antes de publicar</small></p>
+          </section>
+
+          <figure class="cell cell--fig">
+            <div class="fig">
+              <button class="zoom" type="button" data-zoom="assets/img/lavazap.png" aria-label="Ampliar a captura de tela do LavaZap">
+                <img src="assets/img/lavazap.png" alt="Tela de agenda do LavaZap com três colunas, Box 1, Box 2 e Box 3, cada uma com os agendamentos do dia: horário, cliente, serviço, carro e placa." width="1920" height="991" loading="lazy" decoding="async">
+              </button>
+              <svg class="fig__over" viewBox="0 0 1920 991" data-overlay="lavazap" aria-hidden="true"></svg>
+            </div>
+            <figcaption><b class="mono">Fig. 1</b><span>Agenda do dia: uma coluna por box, um cartão por carro. Clique para ampliar.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </dialog>
+
+    <article class="proj" id="aidoc" aria-labelledby="p-aidoc-t">
+      <div class="proj__fig"><img src="assets/img/AIDocHub.jpeg" alt="Tela do AIDoc Hub, em tema escuro, com o menu de módulos à esquerda e o formulário do módulo Power Automate ao centro." width="1600" height="936" loading="lazy" decoding="async"></div>
+      <div class="proj__body">
+        <p class="proj__kicker mono"><b>02</b>Ferramenta com LLM</p>
+        <h3 class="proj__title" id="p-aidoc-t">AIDoc Hub: documentação técnica gerada por LLM</h3>
+        <p>Hub com módulos para Power Automate, Power BI, Python e Alteryx, todos na mesma interface. Falei sobre ele numa mesa redonda na SUCESU 2025.</p>
+        <p class="proj__stack mono">Python · OpenAI · FastAPI</p>
+        <button class="proj__open" type="button" data-pasta="pasta-aidoc" aria-haspopup="dialog">Abrir a folha A3 →</button>
+      </div>
+    </article>
+
+    <dialog class="dossie" id="pasta-aidoc" aria-labelledby="a3-2-t">
+      <form method="dialog" class="dossie__bar"><span class="mono">Principal 02 · folha A3</span><button class="dossie__x mono">Fechar ×</button></form>
+      <div class="a3__sheet">
+        <header class="a3__head">
+          <p class="a3__no"><span class="mono">A3</span><b>02</b></p>
+          <h3 class="a3__title" id="a3-2-t">AIDoc Hub: documentação técnica gerada por LLM</h3>
+          <dl class="a3__meta">
+            <div><dt>Tipo</dt><dd>Ferramenta com LLM</dd></div>
+            <div><dt>Apresentado</dt><dd>SUCESU 2025</dd></div>
+            <div><dt>Stack</dt><dd>Python · OpenAI · FastAPI</dd></div>
+          </dl>
+        </header>
+
+        <div class="a3__grid">
+          <section class="cell">
+            <h4><i>1</i>Contexto</h4>
+            <p>Hub com módulos para Power Automate, Power BI, Python e Alteryx.</p>
+          </section>
+          <section class="cell">
+            <h4><i>2</i>Problema</h4>
+            <p>Documentar fluxos e códigos dá trabalho e toma tempo das equipes de desenvolvimento.</p>
+          </section>
+          <section class="cell">
+            <h4><i>3</i>Meta</h4>
+            <p>Reduzir o tempo de escrita da documentação técnica.</p>
+          </section>
+          <section class="cell cell--wide">
+            <h4><i>4</i>O que foi feito</h4>
+            <ul>
+              <li>Um módulo por tecnologia, todos na mesma interface.</li>
+              <li>No módulo de Power Automate: contexto em texto, um .zip por fluxo, e o LLM gera a documentação.</li>
+            </ul>
+          </section>
+          <section class="cell">
+            <h4><i>5</i>Resultado</h4>
+            <p class="stat"><b>−70%</b><span>no tempo de escrita de documentação</span></p>
+            <p>Depois, virou assunto de palco: <a href="#palco">SUCESU 2025</a>.</p>
+            <p class="sticky" data-todo>Como os 70% foram medidos? Vale uma linha.<small>TODO · tirar antes de publicar</small></p>
+          </section>
+
+          <figure class="cell cell--fig">
+            <div class="fig">
+              <button class="zoom" type="button" data-zoom="assets/img/AIDocHub.jpeg" aria-label="Ampliar a captura de tela do AIDoc Hub">
+                <img src="assets/img/AIDocHub.jpeg" alt="Tela do AIDoc Hub, tema escuro: menu lateral com Power Automate, Power BI, Python e Alteryx e, no centro, o formulário do módulo Power Automate com campo de contexto e envio de arquivos de fluxo." width="1600" height="936" loading="lazy" decoding="async">
+              </button>
+              <svg class="fig__over" viewBox="0 0 1600 936" data-overlay="aidoc" aria-hidden="true"></svg>
+            </div>
+            <figcaption><b class="mono">Fig. 2</b><span>Módulo de Power Automate: contexto em texto e um .zip por fluxo. Clique para ampliar.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </dialog>
+  </div>
+</section>
+
+<!-- 05 · ARQUIVO -->
+<section class="arquivo" id="arquivo" aria-labelledby="arquivo-t">
+  <div class="wrap">
+    <header class="arquivo__head">
+      <div>
+        <p class="folio mono">p. 05</p>
+        <h2 class="h2" id="arquivo-t">O arquivo</h2>
+      </div>
+      <div>
+        <p>O resto dos projetos fica guardado em caixas. Passe o mouse para ver o título e clique para abrir a pasta.</p>
+        <p class="sticky" data-todo>Caixas de exemplo. Troque pelos projetos reais.<small>TODO · tirar antes de publicar</small></p>
+      </div>
+    </header>
+
+    <ul class="estante">
+      <!-- Novo projeto: copie um <li class="caixa"> inteiro e troque o número e os ids (caixa-01, caixa-01-t). -->
+      <li class="caixa">
+        <button class="caixa__btn" type="button" data-pasta="caixa-01" aria-haspopup="dialog">
+          <span class="caixa__tab"><span>Projeto de exemplo 01</span></span>
+          <span class="caixa__lid"></span>
+          <span class="caixa__body">
+            <span class="caixa__label"><small>Caixa</small><b>01</b></span>
+            <span class="caixa__hole"></span>
+          </span>
+        </button>
+        <dialog class="dossie" id="caixa-01" aria-labelledby="caixa-01-t">
+          <form method="dialog" class="dossie__bar"><span class="mono">Arquivo · caixa 01</span><button class="dossie__x mono">Fechar ×</button></form>
+          <div class="a3__sheet">
+            <header class="a3__head">
+              <p class="a3__no"><span class="mono">Caixa</span><b>01</b></p>
+              <h3 class="a3__title" id="caixa-01-t">Projeto de exemplo 01</h3>
+              <dl class="a3__meta">
+                <div><dt>Tipo</dt><dd>Tipo do projeto</dd></div>
+                <div><dt>Papel</dt><dd>Seu papel</dd></div>
+                <div><dt>Stack</dt><dd>Tecnologias usadas</dd></div>
+              </dl>
+            </header>
+            <div class="a3__grid">
+              <section class="cell"><h4><i>1</i>Contexto</h4><p>Onde o projeto existiu e por quê.</p></section>
+              <section class="cell"><h4><i>2</i>Problema</h4><p>O que estava dando errado.</p></section>
+              <section class="cell"><h4><i>3</i>Meta</h4><p>O que precisava mudar.</p></section>
+              <section class="cell cell--wide"><h4><i>4</i>O que foi feito</h4><ul><li>Primeira coisa feita.</li><li>Segunda coisa feita.</li></ul></section>
+              <section class="cell"><h4><i>5</i>Resultado</h4><p>O que mudou, com número se houver.</p></section>
+            </div>
+          </div>
+        </dialog>
+      </li>
+
+      <li class="caixa">
+        <button class="caixa__btn" type="button" data-pasta="caixa-02" aria-haspopup="dialog">
+          <span class="caixa__tab"><span>Projeto de exemplo 02</span></span>
+          <span class="caixa__lid"></span>
+          <span class="caixa__body">
+            <span class="caixa__label"><small>Caixa</small><b>02</b></span>
+            <span class="caixa__hole"></span>
+          </span>
+        </button>
+        <dialog class="dossie" id="caixa-02" aria-labelledby="caixa-02-t">
+          <form method="dialog" class="dossie__bar"><span class="mono">Arquivo · caixa 02</span><button class="dossie__x mono">Fechar ×</button></form>
+          <div class="a3__sheet">
+            <header class="a3__head">
+              <p class="a3__no"><span class="mono">Caixa</span><b>02</b></p>
+              <h3 class="a3__title" id="caixa-02-t">Projeto de exemplo 02</h3>
+              <dl class="a3__meta">
+                <div><dt>Tipo</dt><dd>Tipo do projeto</dd></div>
+                <div><dt>Papel</dt><dd>Seu papel</dd></div>
+                <div><dt>Stack</dt><dd>Tecnologias usadas</dd></div>
+              </dl>
+            </header>
+            <div class="a3__grid">
+              <section class="cell"><h4><i>1</i>Contexto</h4><p>Onde o projeto existiu e por quê.</p></section>
+              <section class="cell"><h4><i>2</i>Problema</h4><p>O que estava dando errado.</p></section>
+              <section class="cell"><h4><i>3</i>Meta</h4><p>O que precisava mudar.</p></section>
+              <section class="cell cell--wide"><h4><i>4</i>O que foi feito</h4><ul><li>Primeira coisa feita.</li><li>Segunda coisa feita.</li></ul></section>
+              <section class="cell"><h4><i>5</i>Resultado</h4><p>O que mudou, com número se houver.</p></section>
+            </div>
+          </div>
+        </dialog>
+      </li>
+
+      <li class="caixa">
+        <button class="caixa__btn" type="button" data-pasta="caixa-03" aria-haspopup="dialog">
+          <span class="caixa__tab"><span>Projeto de exemplo 03</span></span>
+          <span class="caixa__lid"></span>
+          <span class="caixa__body">
+            <span class="caixa__label"><small>Caixa</small><b>03</b></span>
+            <span class="caixa__hole"></span>
+          </span>
+        </button>
+        <dialog class="dossie" id="caixa-03" aria-labelledby="caixa-03-t">
+          <form method="dialog" class="dossie__bar"><span class="mono">Arquivo · caixa 03</span><button class="dossie__x mono">Fechar ×</button></form>
+          <div class="a3__sheet">
+            <header class="a3__head">
+              <p class="a3__no"><span class="mono">Caixa</span><b>03</b></p>
+              <h3 class="a3__title" id="caixa-03-t">Projeto de exemplo 03</h3>
+              <dl class="a3__meta">
+                <div><dt>Tipo</dt><dd>Tipo do projeto</dd></div>
+                <div><dt>Papel</dt><dd>Seu papel</dd></div>
+                <div><dt>Stack</dt><dd>Tecnologias usadas</dd></div>
+              </dl>
+            </header>
+            <div class="a3__grid">
+              <section class="cell"><h4><i>1</i>Contexto</h4><p>Onde o projeto existiu e por quê.</p></section>
+              <section class="cell"><h4><i>2</i>Problema</h4><p>O que estava dando errado.</p></section>
+              <section class="cell"><h4><i>3</i>Meta</h4><p>O que precisava mudar.</p></section>
+              <section class="cell cell--wide"><h4><i>4</i>O que foi feito</h4><ul><li>Primeira coisa feita.</li><li>Segunda coisa feita.</li></ul></section>
+              <section class="cell"><h4><i>5</i>Resultado</h4><p>O que mudou, com número se houver.</p></section>
+            </div>
+          </div>
+        </dialog>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- 06 · DADOS -->
+<section class="dados" id="dados" aria-labelledby="dados-t">
+  <div class="wrap">
+    <div class="dados__sheet">
+      <header class="dados__head">
+        <div>
+          <p class="folio mono">p. 06 · amostra: n = 1</p>
+          <h2 class="h2" id="dados-t">Meus dados, em papel quadriculado</h2>
+        </div>
+        <p class="dados__intro">Sou de dados, então medi o que dava: minhas contribuições no GitHub, de fevereiro a junho de 2026. O traço treme de propósito; é código desenhando como se fosse mão.</p>
+      </header>
+
+      <figure class="chart" id="cal">
+        <div class="chart__scroll"><svg id="chart-cal" role="img" aria-label="Calendário de 16/02 a 14/06/2026, uma coluna por semana e uma linha por dia da semana. Cada círculo é um dia com contribuições no GitHub; a faixa amarela marca as sextas-feiras."></svg></div>
+        <figcaption class="mono" id="cal-tip" aria-live="polite">Passe o mouse (ou toque) em um círculo.</figcaption>
+        <noscript><p>Os gráficos precisam de JavaScript.</p></noscript>
+      </figure>
+
+      <div class="dados__row">
+        <figure class="chart chart--tally" id="tally">
+          <svg id="chart-tally" role="img" aria-label="Placar de contribuições por dia da semana: segunda 0, terça 3, quarta 20, quinta 9, sexta 42, sábado 7, domingo 2."></svg>
+          <figcaption class="mono">Placar por dia da semana. Um risco, uma contribuição; o quinto corta os quatro.</figcaption>
+        </figure>
+
+        <div class="achados">
+          <h3 class="mono">Achados</h3>
+          <ol>
+            <li><b>83</b> contribuições em <b>24</b> dias diferentes.</li>
+            <li><b>42</b> delas numa sexta-feira. Em março, quatro sextas seguidas.</li>
+            <li>Segunda-feira: <b>zero</b>.</li>
+            <li>Maior dia: <b>27/03</b>, com 11.</li>
+          </ol>
+          <h3 class="mono">Como ler</h3>
+          <ul>
+            <li>Círculo: um dia com contribuições. Quanto maior, mais contribuições.</li>
+            <li>Faixa amarela: sextas-feiras.</li>
+            <li>Números 1 a 6: repositórios criados no período.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="dados__row dados__row--b">
+        <div class="repos">
+          <h3 class="mono">Repositórios públicos</h3>
+          <ol>
+            <li><i class="hand">1</i><a href="https://github.com/murilonetlink/portfolio" target="_blank" rel="noopener">portfolio</a><span>HTML</span><time datetime="2026-02-18">18/02</time></li>
+            <li><i class="hand">2</i><a href="https://github.com/murilonetlink/CodexHQ" target="_blank" rel="noopener">CodexHQ</a><span>R</span><time datetime="2026-02-25">25/02</time></li>
+            <li><i class="hand">3</i><a href="https://github.com/murilonetlink/ByteVision-CRM" target="_blank" rel="noopener">ByteVision-CRM</a><span>HTML</span><time datetime="2026-02-26">26/02</time></li>
+            <li><i class="hand">4</i><a href="https://github.com/murilonetlink/murilonetlink" target="_blank" rel="noopener">murilonetlink</a><span>README</span><time datetime="2026-02-26">26/02</time></li>
+            <li><i class="hand">5</i><a href="https://github.com/murilonetlink/BigData_For_Finance" target="_blank" rel="noopener">BigData_For_Finance</a><span>Jupyter</span><time datetime="2026-03-06">06/03</time></li>
+            <li><i class="hand">6</i><a href="https://github.com/murilonetlink/recipe_roulette" target="_blank" rel="noopener">recipe_roulette</a><span>Python</span><time datetime="2026-04-15">15/04</time></li>
+          </ol>
+        </div>
+
+        <details class="ledger">
+          <summary class="mono">Ver os 24 dias em tabela</summary>
+          <table id="ledger">
+            <thead><tr><th scope="col">Data</th><th scope="col">Dia</th><th scope="col">Contribuições</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </details>
+      </div>
+
+      <p class="fonte mono">Fonte: perfil público do GitHub (murilonetlink), coletado em 06/10/2026. Esta janela concentra todas as 83 contribuições dos últimos 12 meses. Dias em UTC, como o GitHub conta. Estilo inspirado em Dear Data, de Giorgia Lupi e Stefanie Posavec.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 06 · PALCO -->
+<section class="palco" id="palco" aria-labelledby="palco-t">
+  <div class="wrap palco__grid">
+    <figure class="clip">
+      <span class="tape tape--l" aria-hidden="true"></span><span class="tape tape--r" aria-hidden="true"></span>
+      <button class="zoom" type="button" data-zoom="assets/img/Sucesu.jpg" aria-label="Ampliar a foto da SUCESU">
+        <span class="duo-pair clip__photo">
+          <img src="assets/img/Sucesu.jpg" alt="Murilo falando ao microfone no palco da SUCESU PR; em primeiro plano, outro participante da mesa, desfocado." width="1498" height="962" loading="lazy" decoding="async">
+          <img class="duo" src="assets/img/Sucesu.jpg" alt="" aria-hidden="true" width="1498" height="962" loading="lazy" decoding="async">
+        </span>
+      </button>
+      <figcaption class="mono">SUCESU PR · 2025 · palco de inovação</figcaption>
+    </figure>
+
+    <div class="palco__text">
+      <p class="folio mono">p. 07</p>
+      <p class="tag mono">SUCESU 2025</p>
+      <h2 class="h2" id="palco-t">Mesa redonda: IA em Debate</h2>
+      <p>Apresentação no palco de inovação da SUCESU. Discuti os desafios técnicos do AIDoc Hub e como a IA generativa está mudando o fluxo de trabalho de quem desenvolve.</p>
+      <p><a href="#aidoc">← Voltar ao AIDoc Hub</a></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- 07 · CONTRACAPA -->
+<footer class="verso" id="contato">
+  <div class="wrap">
+    <p class="folio mono">p. 08 · contracapa</p>
+    <h2 class="verso__h">Tem um processo <span class="uline" data-scribble="underline" data-color="yellow">bagunçado?</span> Me escreve.</h2>
+    <p class="verso__sub">Software, automação ou análise de dados, em projetos locais ou remotos.</p>
+
+    <ul class="verso__links">
+      <li><a href="mailto:murilosou15@gmail.com">murilosou15@gmail.com</a></li>
+      <li><a href="https://github.com/murilonetlink" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/murilonetlink" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+
+    <a class="coupon" href="assets/docs/Murilo%20Costa%20-%20CV.pdf" download>
+      <span class="mono">Recorte e leve</span>
+      <b>CV em PDF</b>
+      <span aria-hidden="true">↓</span>
+    </a>
+
+    <p class="verso__fine mono">© <span id="ano">2026</span> Murilo Costa · Sem framework: HTML, CSS e um pouco de JS · Fim da edição 01</p>
+  </div>
+</footer>
+
+<dialog id="zoom" class="lb" aria-label="Imagem ampliada">
+  <form method="dialog"><button class="lb__x mono">Fechar ×</button></form>
+  <img alt="">
+</dialog>
+
+<script src="assets/js/novo.js" defer></script>
+</body>
+</html>
