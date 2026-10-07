@@ -1,364 +1,587 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Desenvolvedor Full Stack</title>
-    <meta name="description" content="Portfólio apresentando Lavazap, AIDoc Hub e palestras na SUCESU.">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        display: ['Space Grotesk', 'sans-serif'],
-                    },
-                    colors: {
-                        primary: '#6366f1',
-                        secondary: '#ec4899',
-                        dark: '#0f172a',
-                        card: '#1e293b',
-                    }
-                }
-            }
-        }
-    </script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Murilo Costa · software, dados e processos</title>
+<meta name="description" content="Portfólio de Murilo Costa: LavaZap, AIDoc Hub e uma mesa redonda na SUCESU.">
+<meta name="theme-color" content="#0c0c0e">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Reenie+Beanie&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/noir.css">
 </head>
-<body class="bg-dark text-slate-300 font-sans selection:bg-primary selection:text-white">
-    <div id="tsparticles" class="fixed inset-0 -z-20 pointer-events-none"></div>
-    <nav class="fixed w-full z-40 glass-nav top-0 start-0 transition-all duration-300" id="main-nav">
-        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between p-4">
-            <a href="#" class="flex items-center space-x-2 group">
-                <span class="text-2xl font-bold font-display text-white group-hover:text-primary transition-colors">&lt;Dev/&gt;</span>
-            </a>
-            
-            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none transition-colors" id="menu-btn">
-                <span class="sr-only">Menu</span>
-                <i class="fa-solid fa-bars text-xl"></i>
-            </button>
-            
-            <div class="hidden w-full md:block md:w-auto transition-all duration-300 ease-in-out" id="navbar-default">
-                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-700 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-slate-800 md:bg-transparent">
-                    <li><a href="#home" class="nav-link block py-2 px-3 text-white bg-primary rounded md:bg-transparent md:text-primary md:p-0">Início</a></li>
-                    <li><a href="#sobre" class="nav-link block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:hover:text-primary md:p-0 transition-colors">Sobre</a></li>
-                    <li><a href="#destaques" class="nav-link block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:hover:text-primary md:p-0 transition-colors">Projetos</a></li>
-                    <li><a href="#eventos" class="nav-link block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:hover:text-primary md:p-0 transition-colors">Eventos</a></li>
-                    <li><a href="#contato" class="nav-link block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:hover:text-primary md:p-0 transition-colors">Contato</a></li>
-                    <li>
-                        <a href="assets/docs/Murilo Costa - CV.pdf" download class="nav-link block py-2 px-3 text-primary border border-primary rounded hover:bg-primary hover:text-white transition-colors">
-                            <i class="fa-solid fa-download mr-1"></i> CV
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <filter id="ink" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="4" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -9 7.6" result="holes"/>
+    <feComposite in="SourceGraphic" in2="holes" operator="in" result="worn"/>
+    <feTurbulence type="turbulence" baseFrequency=".04" numOctaves="2" seed="2" result="w"/>
+    <feDisplacementMap in="worn" in2="w" scale="1.6" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+
+<header class="strip">
+  <div class="wrap strip__in">
+    <a class="strip__brand" href="#capa">Murilo Costa <span>portfólio</span></a>
+    <nav aria-label="Índice">
+      <ol>
+        <li><a href="#quem"><b>02</b>quem</a></li>
+        <li><a href="#lavazap"><b>03</b>lavazap</a></li>
+        <li><a href="#aidoc"><b>04</b>aidoc hub</a></li>
+        <li><a href="#arquivo"><b>05</b>arquivo</a></li>
+        <li><a href="#palco"><b>06</b>palco</a></li>
+        <li><a href="#contato"><b>07</b>contato</a></li>
+      </ol>
     </nav>
+  </div>
+</header>
 
-    <section id="home" class="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
-        <div class="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl -z-10 animate-pulse"></div>
-        <div class="absolute bottom-20 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -z-10"></div>
+<main id="conteudo">
 
-        <div class="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-12">
-            <div class="flex-1 text-center md:text-left">
-                <div class="flex flex-wrap justify-center md:justify-start gap-3 mb-6">
-                    <span class="py-1 px-3 rounded-full bg-slate-800 border border-slate-700 text-sm font-medium text-primary">
-                        Full Stack Developer
-                    </span>
-                    <span class="py-1 px-3 rounded-full bg-slate-800 border border-slate-700 text-sm font-medium text-sky-400">
-                        Data Scientist
-                    </span>
-                </div>
+<!-- 01 · CAPA -->
+<section class="capa" id="capa" aria-labelledby="capa-t">
+  <div class="capa__blinds" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="capa__top mono"><span>Edição 01 / 2026</span><span>Curitiba, PR</span><span>Tiragem: 1 link</span></p>
 
-                <p class="text-xl md:text-2xl text-slate-300 font-medium mb-2">
-                    Olá, eu sou <span class="text-white font-bold">Murilo Costa</span> 👋
-                </p>
+    <div class="capa__grid">
+      <div class="capa__main">
+        <h1 class="capa__name" id="capa-t"><span>Murilo</span> <span>Costa</span></h1>
+        <p class="capa__lede" data-type>Desenvolvo software, analiso dados e procuro o que dá pra simplificar num processo.</p>
+        <p class="capa__roles mono">Full stack · Ciência de Dados · Excelência Operacional</p>
+      </div>
 
-                <h1 class="text-4xl md:text-6xl font-bold font-display text-white mb-6 leading-tight">
-                    Transformando ideias em <br>
-                    <span class="gradient-text">soluções inteligentes.</span>
-                </h1>
-                
-                <p class="text-lg text-slate-400 mb-8 max-w-lg mx-auto md:mx-0">
-                    Estudante de Ciência de Dados e desenvolvedor focado em criar produtos digitais escaláveis e automações que geram valor real.
-                </p>
-
-                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-                    <a href="#destaques" class="px-8 py-3 bg-primary hover:bg-indigo-600 text-white font-semibold rounded-lg transition shadow-lg shadow-indigo-500/30">
-                        Ver Portfolio
-                    </a>
-                    <a href="https://github.com/murilonetlink" target="_blank" class="px-8 py-3 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-lg border border-slate-700 transition flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-github"></i> GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/murilonetlink" target="_blank" class="px-8 py-3 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-lg border border-slate-700 transition flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-linkedin"></i> LinkedIn
-                    </a>
-                </div>
-            </div>
-            
-            <div class="flex-1 flex justify-center relative">
-                <div class="w-64 h-64 md:w-80 md:h-80 relative z-10">
-                    <img src="assets/img/profile_pic.jpeg" 
-                         alt="Foto de Perfil" 
-                         class="w-full h-full object-cover rounded-full border-4 border-slate-700 shadow-2xl">
-
-                    <div class="absolute -bottom-4 -right-4 bg-slate-800 p-4 rounded-xl border border-slate-700 shadow-xl flex items-center gap-3 animate-bounce" style="animation-duration: 3s;">
-                        <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                        <span class="text-sm font-bold text-white">Open to Work</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-10 border-t border-slate-800 bg-slate-900/50">
-        <div class="max-w-7xl mx-auto px-4">
-            <p class="text-center text-slate-400 text-sm mb-6 uppercase tracking-widest">Tecnologias que domino</p>
-            <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-                <div class="text-center group">
-                    <i class="fa-brands fa-python text-4xl text-yellow-300 mb-2 group-hover:scale-110 transition"></i>
-                    <p class="text-xs text-slate-400">Python</p>
-                </div>
-                <div class="text-center group">
-                    <i class="fa-solid fa-database text-4xl text-blue-400 mb-2 group-hover:scale-110 transition"></i>
-                    <p class="text-xs text-slate-400">SQL</p>
-                </div>
-                <div class="text-center group">
-                    <i class="fa-brands fa-react text-4xl text-cyan-400 mb-2 group-hover:scale-110 transition"></i>
-                    <p class="text-xs text-slate-400">React</p>
-                </div>
-                <div class="text-center group">
-                    <i class="fa-solid fa-chart-simple text-4xl text-yellow-500 mb-2 group-hover:scale-110 transition"></i>
-                    <p class="text-xs text-slate-400">Power BI</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="sobre" class="py-20 relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-10"></div>
-        <div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary/5 rounded-full blur-3xl -z-10"></div>
-
-        <div class="max-w-5xl mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-3xl md:text-4xl font-bold font-display text-white mb-6">
-                        Mais que código, <br>
-                        <span class="text-primary">estratégia e dados.</span>
-                    </h2>
-                    <div class="space-y-4 text-slate-400 text-lg leading-relaxed">
-                        <p>
-                            Atualmente cursando o <strong class="text-white">5º período de Ciência de Dados</strong> na FAE e atuando como estagiário em Excelência Operacional na <strong class="text-white">Neodent</strong>.
-                        </p>
-                        <p>
-                            Também trabalho como free-lancer no <strong class="text-white">LavaZap</strong>, uma empresa <strong class="text-white">Saas</strong> que entrega uma plataforma completa para empresas de lava-car, permitindo o gerenciamento de agendamentos, relatórios essenciais para admnistração do lavacar e etc.
-                        </p>
-                        <p>
-                            Minha jornada combina a lógica analítica da ciência de dados com a criatividade do desenvolvimento Full Stack. Não me contento apenas em "fazer funcionar"; meu foco é criar automações e sistemas que tragam inteligência para o negócio e resolvam dores reais dos usuários.
-                        </p>
-                        <p>
-                            Seja construindo um SaaS do zero ou otimizando processos industriais com IA, busco sempre a excelência técnica.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="grid gap-4">
-                    <div class="bg-card p-6 rounded-xl border border-slate-700 hover:border-primary transition-colors group">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                                <i class="fa-solid fa-briefcase"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-white font-bold">Neodent</h4>
-                                <p class="text-sm text-slate-400">Estágio em Operational Excellence</p>
-                                <p class="text-xs text-slate-500 mt-1">Foco em automação e análise de dados.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-card p-6 rounded-xl border border-slate-700 hover:border-secondary transition-colors group">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors">
-                                <i class="fa-solid fa-graduation-cap"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-white font-bold">FAE Centro Universitário</h4>
-                                <p class="text-sm text-slate-400">Ciência de Dados para Negócios</p>
-                                <p class="text-xs text-slate-500 mt-1">5º Período • Em andamento</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-card p-6 rounded-xl border border-slate-700 hover:border-sky-500 transition-colors group">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-sky-500/10 flex items-center justify-center text-sky-500 group-hover:bg-sky-500 group-hover:text-white transition-colors">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-white font-bold">Curitiba, PR</h4>
-                                <p class="text-sm text-slate-400">Disponível para projetos locais e remotos.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="destaques" class="py-24 px-4 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto">
-        <div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-12">
-            <div class="text-center md:text-left w-full md:w-auto">
-                <h2 class="text-3xl md:text-4xl font-bold font-display text-white mb-2">Projetos Principais</h2>
-                <p class="text-slate-400">Cases que geram valor real.</p>
-            </div>
-            <a href="https://github.com/murilonetlink" class="hidden md:flex items-center text-primary hover:text-white transition mt-4 md:mt-0">
-                Ver todos no GitHub <i class="fa-solid fa-arrow-right ml-2"></i>
-            </a>
-        </div>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-
-                <div class="bg-card rounded-2xl overflow-hidden border border-slate-700 card-hover group h-full flex flex-col">
-                    <div class="h-64 relative overflow-hidden bg-slate-800">
-                        <img src="assets/img/lavazap.png" 
-                             alt="Lavazap Preview" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition duration-700 cursor-zoom-in img-zoom"
-                             title="Clique para expandir">
-                        <div class="img-overlay pointer-events-none"></div>
-                        <div class="absolute bottom-4 left-4 pointer-events-none">
-                            <i class="fa-solid fa-car-side text-3xl text-white drop-shadow-lg"></i>
-                        </div>
-                    </div>
-                    <div class="p-8 flex-1 flex flex-col">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-2xl font-bold text-white">Lavazap</h3>
-                            <span class="bg-blue-500/20 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded border border-blue-500/20">SaaS</span>
-                        </div>
-                        <p class="text-slate-400 mb-6 flex-1">
-                            Plataforma de agendamento para lava-cars. Resolve a desorganização de horários e automatiza lembretes via WhatsApp, aumentando o faturamento dos proprietários.
-                        </p>
-                        <div class="mt-auto">
-                            <div class="flex flex-wrap gap-2 mb-6">
-                                <span class="px-3 py-1 bg-slate-800 rounded text-xs text-slate-300 font-mono">React</span>
-                                <span class="px-3 py-1 bg-slate-800 rounded text-xs text-slate-300 font-mono">Python</span>
-                                <span class="px-3 py-1 bg-slate-800 rounded text-xs text-slate-300 font-mono">Postgres</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-card rounded-2xl overflow-hidden border border-slate-700 card-hover group h-full flex flex-col">
-                    <div class="h-64 relative overflow-hidden bg-slate-800">
-                        <img src="assets/img/AIDocHub.jpeg" 
-                             alt="AIDoc Hub Preview" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition duration-700 cursor-zoom-in img-zoom"
-                             title="Clique para expandir">
-                        <div class="img-overlay pointer-events-none"></div>
-                        <div class="absolute bottom-4 left-4 pointer-events-none">
-                            <i class="fa-solid fa-brain text-3xl text-white drop-shadow-lg"></i>
-                        </div>
-                    </div>
-                    <div class="p-8 flex-1 flex flex-col">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-2xl font-bold text-white">AIDoc Hub</h3>
-                            <span class="bg-purple-500/20 text-purple-300 text-xs font-semibold px-2.5 py-1 rounded border border-purple-500/20">IA / LLM</span>
-                        </div>
-                        <p class="text-slate-400 mb-6 flex-1">
-                            Ferramenta que utiliza LLMs para gerar documentação técnica automaticamente. Reduz o tempo de escrita de docs em 70% para equipes de desenvolvimento.
-                        </p>
-                        <div class="mt-auto">
-                            <div class="flex flex-wrap gap-2 mb-6">
-                                <span class="px-3 py-1 bg-slate-800 rounded text-xs text-slate-300 font-mono">Python</span>
-                                <span class="px-3 py-1 bg-slate-800 rounded text-xs text-slate-300 font-mono">OpenAI</span>
-                                <span class="px-3 py-1 bg-slate-800 rounded text-xs text-slate-300 font-mono">FastAPI</span>
-                            </div>
-                            <div class="flex gap-4">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="eventos" class="py-20 px-4 bg-slate-900/30 relative">
-        <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(#6366f1 1px, transparent 1px); background-size: 30px 30px;"></div>
-
-        <div class="max-w-6xl mx-auto relative z-10">
-            <div class="text-center mb-12">
-                <span class="text-primary font-semibold tracking-wider uppercase text-sm">Community & Speaking</span>
-                <h2 class="text-3xl md:text-5xl font-bold font-display text-white mt-2">Compartilhando Conhecimento</h2>
-            </div>
-
-            <div class="bg-slate-800/50 rounded-3xl border border-slate-700 overflow-hidden shadow-2xl">
-                <div class="grid grid-cols-1 md:grid-cols-2">
-                    <div class="p-8 md:p-12 flex flex-col justify-center">
-                        <div class="inline-block px-3 py-1 bg-pink-500/20 text-pink-300 rounded w-fit text-sm font-semibold mb-6">
-                            SUCESU 2025
-                        </div>
-                        <h3 class="text-3xl font-bold text-white mb-4">
-                            Mesa Redonda | IA em Debate
-                        </h3>
-                        <p class="text-slate-300 text-lg mb-8 leading-relaxed">
-                            Apresentação realizada no palco de inovação da SUCESU. Discuti os desafios técnicos do AIDoc Hub e como a inteligência artificial generativa está mudando o fluxo de trabalho dos desenvolvedores.
-                        </p>
-                        <div class="flex gap-4">
-                        </div>
-                    </div>
-                    <div class="relative h-64 md:h-auto bg-slate-900">
-                         <img src="assets/img/Sucesu.jpg" 
-                          alt="Apresentação SUCESU" 
-                          class="w-full h-full object-cover opacity-80 hover:opacity-100 transition duration-500 cursor-zoom-in img-zoom">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer id="contato" class="py-12 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h2 class="text-2xl font-bold text-white mb-6">Vamos construir algo juntos?</h2>
-            <div class="flex justify-center space-x-6 mb-8">
-                <a href="https://github.com/murilonetlink" class="social-icon w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 hover:text-white hover:bg-primary transition duration-300">
-                    <i class="fa-brands fa-github text-xl"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/murilonetlink" class="social-icon w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 hover:text-white hover:bg-blue-600 transition duration-300">
-                    <i class="fa-brands fa-linkedin-in text-xl"></i>
-                </a>
-                <a href="mailto:murilosou15@gmail.com" class="social-icon w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 hover:text-white hover:bg-red-500 transition duration-300">
-                    <i class="fa-solid fa-envelope text-xl"></i>
-                </a>
-            </div>
-            <p class="text-slate-500 text-sm">
-                &copy; <span id="year"></span> Murilo Costa. | Desenvolvido com Tailwind CSS.
-            </p>
-        </div>
-    </footer>
-
-    <div id="image-modal" class="fixed inset-0 z-[100] bg-black/90 hidden flex items-center justify-center p-4 backdrop-blur-sm opacity-0 transition-opacity duration-300" aria-hidden="true">
-        <button id="close-modal" class="absolute top-4 right-4 text-white hover:text-primary transition-colors z-[110] bg-black/50 rounded-full w-10 h-10 flex items-center justify-center">
-            <i class="fa-solid fa-xmark text-2xl"></i>
-        </button>
-        
-        <div class="relative w-full h-full flex items-center justify-center" id="modal-content">
-            <img id="modal-img" src="" alt="Expanded Project" class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl scale-95 transition-transform duration-300">
-            
-            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/70 px-4 py-2 rounded-full text-white text-sm opacity-0 transition-opacity duration-300" id="modal-caption">
-                Visualização do Projeto
-            </div>
-        </div>
+      <figure class="shot">
+        <span class="tape" aria-hidden="true"></span>
+        <span class="shot__photo">
+          <img src="assets/img/profile_pic.jpeg" alt="Selfie de Murilo ao ar livre, num parque, com o cabelo ondulado e uma mochila nos ombros." width="757" height="1008">
+        </span>
+        <p class="stamp"><span>Aberto a projetos</span><small>Curitiba + remoto</small></p>
+        <figcaption>Ficha nº 001</figcaption>
+      </figure>
     </div>
 
-    <script src="assets/js/main.js"></script>
+    <nav class="indice" aria-labelledby="indice-t">
+      <div class="indice__head">
+        <h2 class="mono" id="indice-t">Nesta edição</h2>
+        <p class="indice__note" aria-hidden="true"><span class="hand">começa por aqui</span><svg class="arr" width="76" height="46" viewBox="0 0 76 46" data-arrow="6,6,70,34,-14"></svg></p>
+      </div>
+      <ol>
+        <li><a href="#quem"><span>Quem escreve isto</span><i aria-hidden="true"></i><b>02</b></a></li>
+        <li><a href="#lavazap"><span>LavaZap: a agenda do lava-car, box por box</span><i aria-hidden="true"></i><b>03</b></a></li>
+        <li><a href="#aidoc"><span>AIDoc Hub: documentação gerada por LLM</span><i aria-hidden="true"></i><b>04</b></a></li>
+        <li><a href="#arquivo"><span>O arquivo: o resto dos projetos, numa caixa</span><i aria-hidden="true"></i><b>05</b></a></li>
+        <li><a href="#palco"><span>Uma mesa redonda na SUCESU</span><i aria-hidden="true"></i><b>06</b></a></li>
+        <li><a href="#contato"><span>Tem um processo bagunçado?</span><i aria-hidden="true"></i><b>07</b></a></li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<!-- 02 · QUEM -->
+<section class="quem" id="quem" aria-labelledby="quem-t">
+  <div class="wrap quem__grid">
+    <div class="quem__text">
+      <p class="folio mono">p. 02</p>
+      <h2 class="h2" id="quem-t">Quem escreve isto</h2>
+      <div class="page rv">
+        <span class="tape" aria-hidden="true"></span>
+        <p class="dropcap">Sou o Murilo. Estou no 6º período de Ciência de Dados para Negócios na FAE e sou Analista de Dados Jr na Neodent, com foco em automação e análise de dados; comecei lá como estagiário em <span class="mark-circle" data-scribble="circle">Excelência Operacional</span>. Também desenvolvo o LavaZap como freelancer.</p>
+        <p>O que me interessa é a parte do meio: pegar um processo que dá trabalho, achar onde está o desperdício e resolver com o menor software possível. Fazer funcionar é o mínimo; quero entender por que o problema existia.</p>
+        <p class="quem__note hand" aria-hidden="true">o círculo vermelho: é de lá que vem o A3</p>
+      </div>
+    </div>
+
+    <aside class="ficha rv" aria-label="Ficha">
+      <h3 class="ficha__t mono">Ficha</h3>
+      <dl>
+        <div><dt>Nome</dt><dd>Murilo Costa</dd></div>
+        <div><dt>Formação</dt><dd>Ciência de Dados para Negócios, FAE (6º período)</dd></div>
+        <div><dt>Cargo</dt><dd>Analista de Dados Jr, Neodent</dd></div>
+        <div><dt>Freela</dt><dd>LavaZap, SaaS para lava-car</dd></div>
+        <div><dt>Ferramentas</dt><dd>Python, SQL, React, Power BI</dd></div>
+        <div><dt>Cidade</dt><dd>Curitiba, PR</dd></div>
+        <div><dt>Disponível</dt><dd>Projetos locais e remotos</dd></div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<!-- 03–04 · CASOS (A3) -->
+<section class="casos" aria-labelledby="casos-t">
+  <div class="wrap">
+    <header class="casos__head">
+      <p class="folio mono">p. 03–04</p>
+      <h2 class="h2" id="casos-t">Os dois <span class="uline" data-scribble="underline">principais</span></h2>
+      <p>Cada um abre numa folha A3, o formato que aprendi na Excelência Operacional: contexto, problema, meta, o que foi feito e o resultado.</p>
+    </header>
+
+    <article class="proj rv" id="lavazap" aria-labelledby="p-lavazap-t">
+      <div class="proj__fig"><img src="assets/img/lavazap.png" alt="Tela de agenda do LavaZap, com uma coluna por box e um cartão por agendamento." width="1920" height="991" loading="lazy" decoding="async"></div>
+      <div class="proj__body">
+        <p class="proj__kicker mono"><b>01</b>SaaS para lava-car</p>
+        <h3 class="proj__title" id="p-lavazap-t">LavaZap: a agenda do lava-car, box por box</h3>
+        <p>Plataforma para empresas de lava-car: agenda do dia com uma coluna por box, lembretes automáticos por WhatsApp e relatórios para a administração.</p>
+        <p class="proj__stack mono">React · Python · Postgres</p>
+        <button class="proj__open" type="button" data-pasta="pasta-lavazap" aria-haspopup="dialog">Abrir a folha A3 →</button>
+      </div>
+    </article>
+
+    <dialog class="dossie" id="pasta-lavazap" aria-labelledby="a3-1-t">
+      <form method="dialog" class="dossie__bar"><span class="mono">Principal 01 · folha A3</span><button class="dossie__x mono">Fechar ×</button></form>
+      <div class="a3__sheet">
+        <header class="a3__head">
+          <p class="a3__no"><span class="mono">A3</span><b>01</b></p>
+          <h3 class="a3__title" id="a3-1-t">LavaZap: a agenda do lava-car, box por box</h3>
+          <dl class="a3__meta">
+            <div><dt>Tipo</dt><dd>SaaS para lava-car</dd></div>
+            <div><dt>Papel</dt><dd>Freelancer, desenvolvimento</dd></div>
+            <div><dt>Stack</dt><dd>React · Python · Postgres</dd></div>
+          </dl>
+        </header>
+
+        <div class="a3__grid">
+          <section class="cell">
+            <h4><i>1</i>Contexto</h4>
+            <p>Plataforma para empresas de lava-car: agendamentos, relatórios para a administração e o que mais a operação pedir.</p>
+          </section>
+          <section class="cell">
+            <h4><i>2</i>Problema</h4>
+            <p>Horários desorganizados: quem entra em qual box, e quando.</p>
+          </section>
+          <section class="cell">
+            <h4><i>3</i>Meta</h4>
+            <p>Uma agenda que o dono entende de relance, com lembrete automático para o cliente e relatório pronto.</p>
+          </section>
+          <section class="cell cell--wide">
+            <h4><i>4</i>O que foi feito</h4>
+            <ul>
+              <li>Agenda do dia com uma coluna por box e filtros por serviço e por box.</li>
+              <li>Cada cartão traz horário, cliente, serviço, carro, placa e duração.</li>
+              <li>Lembretes automáticos via WhatsApp e relatórios para a administração.</li>
+            </ul>
+          </section>
+          <section class="cell">
+            <h4><i>5</i>Resultado</h4>
+            <p>Objetivo do produto: mais faturamento para o dono do lava-car.</p>
+            <p class="sticky" data-todo>Falta 1 número real aqui. Ex.: faltas antes e depois do lembrete.<small>TODO · tirar antes de publicar</small></p>
+          </section>
+
+          <figure class="cell cell--fig">
+            <div class="fig">
+              <button class="zoom" type="button" data-zoom="assets/img/lavazap.png" aria-label="Ampliar a captura de tela do LavaZap">
+                <img src="assets/img/lavazap.png" alt="Tela de agenda do LavaZap com três colunas, Box 1, Box 2 e Box 3, cada uma com os agendamentos do dia: horário, cliente, serviço, carro e placa." width="1920" height="991" loading="lazy" decoding="async">
+              </button>
+              <svg class="fig__over" viewBox="0 0 1920 991" data-overlay="lavazap" aria-hidden="true"></svg>
+            </div>
+            <figcaption><b class="mono">Fig. 1</b><span>Agenda do dia: uma coluna por box, um cartão por carro. Clique para ampliar.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </dialog>
+
+    <article class="proj rv" id="aidoc" aria-labelledby="p-aidoc-t">
+      <div class="proj__fig"><img src="assets/img/AIDocHub.jpeg" alt="Tela do AIDoc Hub, em tema escuro, com o menu de módulos à esquerda e o formulário do módulo Power Automate ao centro." width="1600" height="936" loading="lazy" decoding="async"></div>
+      <div class="proj__body">
+        <p class="proj__kicker mono"><b>02</b>Ferramenta com LLM</p>
+        <h3 class="proj__title" id="p-aidoc-t">AIDoc Hub: documentação técnica gerada por LLM</h3>
+        <p>Hub com módulos para Power Automate, Power BI, Python e Alteryx, todos na mesma interface. Falei sobre ele numa mesa redonda na SUCESU 2025.</p>
+        <p class="proj__stack mono">Python · OpenAI · FastAPI</p>
+        <button class="proj__open" type="button" data-pasta="pasta-aidoc" aria-haspopup="dialog">Abrir a folha A3 →</button>
+      </div>
+    </article>
+
+    <dialog class="dossie" id="pasta-aidoc" aria-labelledby="a3-2-t">
+      <form method="dialog" class="dossie__bar"><span class="mono">Principal 02 · folha A3</span><button class="dossie__x mono">Fechar ×</button></form>
+      <div class="a3__sheet">
+        <header class="a3__head">
+          <p class="a3__no"><span class="mono">A3</span><b>02</b></p>
+          <h3 class="a3__title" id="a3-2-t">AIDoc Hub: documentação técnica gerada por LLM</h3>
+          <dl class="a3__meta">
+            <div><dt>Tipo</dt><dd>Ferramenta com LLM</dd></div>
+            <div><dt>Apresentado</dt><dd>SUCESU 2025</dd></div>
+            <div><dt>Stack</dt><dd>Python · OpenAI · FastAPI</dd></div>
+          </dl>
+        </header>
+
+        <div class="a3__grid">
+          <section class="cell">
+            <h4><i>1</i>Contexto</h4>
+            <p>Hub com módulos para Power Automate, Power BI, Python e Alteryx.</p>
+          </section>
+          <section class="cell">
+            <h4><i>2</i>Problema</h4>
+            <p>Documentar fluxos e códigos dá trabalho e toma tempo das equipes de desenvolvimento.</p>
+          </section>
+          <section class="cell">
+            <h4><i>3</i>Meta</h4>
+            <p>Reduzir o tempo de escrita da documentação técnica.</p>
+          </section>
+          <section class="cell cell--wide">
+            <h4><i>4</i>O que foi feito</h4>
+            <ul>
+              <li>Um módulo por tecnologia, todos na mesma interface.</li>
+              <li>No módulo de Power Automate: contexto em texto, um .zip por fluxo, e o LLM gera a documentação.</li>
+            </ul>
+          </section>
+          <section class="cell">
+            <h4><i>5</i>Resultado</h4>
+            <p class="stat"><b>−70%</b><span>no tempo de escrita de documentação</span></p>
+            <p>Depois, virou assunto de palco: <a href="#palco">SUCESU 2025</a>.</p>
+            <p class="sticky" data-todo>Como os 70% foram medidos? Vale uma linha.<small>TODO · tirar antes de publicar</small></p>
+          </section>
+
+          <figure class="cell cell--fig">
+            <div class="fig">
+              <button class="zoom" type="button" data-zoom="assets/img/AIDocHub.jpeg" aria-label="Ampliar a captura de tela do AIDoc Hub">
+                <img src="assets/img/AIDocHub.jpeg" alt="Tela do AIDoc Hub, tema escuro: menu lateral com Power Automate, Power BI, Python e Alteryx e, no centro, o formulário do módulo Power Automate com campo de contexto e envio de arquivos de fluxo." width="1600" height="936" loading="lazy" decoding="async">
+              </button>
+              <svg class="fig__over" viewBox="0 0 1600 936" data-overlay="aidoc" aria-hidden="true"></svg>
+            </div>
+            <figcaption><b class="mono">Fig. 2</b><span>Módulo de Power Automate: contexto em texto e um .zip por fluxo. Clique para ampliar.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </dialog>
+  </div>
+</section>
+
+<!-- 05 · ARQUIVO -->
+<section class="arquivo" id="arquivo" aria-labelledby="arquivo-t">
+  <div class="wrap">
+    <header class="arquivo__head">
+      <div>
+        <p class="folio mono">p. 05</p>
+        <h2 class="h2" id="arquivo-t">O arquivo</h2>
+      </div>
+      <div>
+        <p>O resto dos projetos fica numa caixa de pastas, vista de cima. Passe o mouse numa pasta para puxá-la e ver o título; clique para abrir o A3 completo. O ponto colorido na aba é a categoria.</p>
+      </div>
+    </header>
+
+    <div class="arq">
+      <div class="arq__box">
+        <div class="arq__well">
+          <!-- Novo projeto: copie um <button class="folha"> e o <dialog> correspondente; troque número, categoria (data-cat) e ids. A posição na pilha é automática. -->
+          <button class="folha" type="button" data-pasta="pasta-dungeon" data-cat="game" aria-haspopup="dialog"><span class="folha__tab"><span class="folha__no mono">01</span><span class="folha__title">Dungeon Crawler</span></span></button>
+          <button class="folha" type="button" data-pasta="pasta-cinematch" data-cat="mobile" aria-haspopup="dialog"><span class="folha__tab"><span class="folha__no mono">02</span><span class="folha__title">CineMatch</span></span></button>
+          <button class="folha" type="button" data-pasta="pasta-codexhq" data-cat="acad" aria-haspopup="dialog"><span class="folha__tab"><span class="folha__no mono">03</span><span class="folha__title">CodexHQ</span></span></button>
+          <button class="folha" type="button" data-pasta="pasta-bigdata" data-cat="acad" aria-haspopup="dialog"><span class="folha__tab"><span class="folha__no mono">04</span><span class="folha__title">CVM Data Lake Explorer</span></span></button>
+        </div>
+        <p class="arq__label mono">Arquivo · projetos</p>
+        <p class="stamp arq__stamp" aria-hidden="true">Outros casos</p>
+      </div>
+
+      <ul class="arq__legend mono" aria-label="Categorias">
+        <li><span class="cat" data-cat="game">Game dev</span></li>
+        <li><span class="cat" data-cat="mobile">Mobile</span></li>
+        <li><span class="cat" data-cat="acad">Acadêmico</span></li>
+      </ul>
+
+      <dialog class="dossie" id="pasta-dungeon" aria-labelledby="pasta-dungeon-t">
+        <form method="dialog" class="dossie__bar"><span class="mono">Arquivo · folha 01</span><button class="dossie__x mono">Fechar ×</button></form>
+        <div class="a3__sheet">
+          <header class="a3__head">
+            <p class="a3__no"><span class="mono">A3</span><b>01</b></p>
+            <h3 class="a3__title" id="pasta-dungeon-t">Dungeon Crawler (título provisório)</h3>
+            <dl class="a3__meta">
+              <div><dt>Categoria</dt><dd><span class="cat" data-cat="game">Game dev</span></dd></div>
+              <div><dt>Papel</dt><dd>Dupla: eu no código, um amigo na arte e nos visuais</dd></div>
+              <div><dt>Stack</dt><dd>Godot Engine 4.7, GDScript, TileMapLayer/TileSet, Git e GitHub</dd></div>
+            </dl>
+          </header>
+          <div class="a3__grid">
+            <section class="cell">
+              <h4><i>1</i>Contexto</h4>
+              <p>Protótipo de dungeon crawler 2D top-down, com exploração de salas, combate e armadilhas. Projeto pessoal de aprendizado, em desenvolvimento, com devlog no YouTube.</p>
+            </section>
+            <section class="cell">
+              <h4><i>2</i>Problema</h4>
+              <p>Construir uma base funcional de movimentação, combate e cenário para evoluir depois para masmorras procedurais.</p>
+            </section>
+            <section class="cell">
+              <h4><i>3</i>Meta</h4>
+              <p>Um protótipo top-down com salas, inimigos e armadilhas, preparado para expansão.</p>
+            </section>
+            <section class="cell cell--wide">
+              <h4><i>4</i>O que foi feito</h4>
+              <ul>
+                <li>Movimentação e animações do jogador.</li>
+                <li>TileSet com chão, paredes e colisões.</li>
+                <li>Componente de vida e sistema de Hitbox/Hurtbox.</li>
+                <li>Inimigo slime com perseguição, ataque e salto.</li>
+                <li>Espinhos animados que causam dano.</li>
+                <li>Recuo e flash branco quando o jogador recebe um golpe.</li>
+              </ul>
+            </section>
+            <section class="cell">
+              <h4><i>5</i>Resultado</h4>
+              <p>Protótipo jogável com os sistemas básicos de movimento, colisão e combate.</p>
+              <p>Ainda faltam a geração procedural de salas conectadas e uma demo pública.</p>
+            </section>
+
+            <figure class="cell cell--fig">
+              <div class="fig fig--duo">
+                <a class="thumb" href="https://youtu.be/ad_V5IMngqc" target="_blank" rel="noopener">
+                  <img src="https://i.ytimg.com/vi/ad_V5IMngqc/hqdefault.jpg" alt="Miniatura do primeiro vídeo de devlog do Dungeon Crawler no YouTube." width="480" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+                  <span class="thumb__cap mono">Devlog 01</span><span class="sr-only">(abre o YouTube)</span>
+                </a>
+                <a class="thumb" href="https://youtu.be/WhP6SK71ch8" target="_blank" rel="noopener">
+                  <img src="https://i.ytimg.com/vi/WhP6SK71ch8/hqdefault.jpg" alt="Miniatura do segundo vídeo de devlog do Dungeon Crawler no YouTube." width="480" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+                  <span class="thumb__cap mono">Devlog 02</span><span class="sr-only">(abre o YouTube)</span>
+                </a>
+              </div>
+              <figcaption><b class="mono">Fig. 3</b><span>Os dois vídeos de devlog do canal Joineed Dolts. Clique para assistir no YouTube.</span></figcaption>
+            </figure>
+          </div>
+          <ul class="a3__foot">
+            <li><span class="mono">Código</span><span class="lock"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M4 7V5a4 4 0 0 1 8 0v2h1v8H3V7zm2 0h4V5a2 2 0 0 0-4 0z"/></svg>Privado</span></li>
+            <li><span class="mono">Canal</span><a href="https://www.youtube.com/@JoineedDolts" target="_blank" rel="noopener">YouTube</a><a href="https://www.instagram.com/joineeddots/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@joineed.dolts" target="_blank" rel="noopener">TikTok</a></li>
+          </ul>
+        </div>
+      </dialog>
+
+      <dialog class="dossie" id="pasta-cinematch" aria-labelledby="pasta-cinematch-t">
+        <form method="dialog" class="dossie__bar"><span class="mono">Arquivo · folha 02</span><button class="dossie__x mono">Fechar ×</button></form>
+        <div class="a3__sheet">
+          <header class="a3__head">
+            <p class="a3__no"><span class="mono">A3</span><b>02</b></p>
+            <h3 class="a3__title" id="pasta-cinematch-t">CineMatch: o que assistir em dupla, no estilo swipe</h3>
+            <dl class="a3__meta">
+              <div><dt>Categoria</dt><dd><span class="cat" data-cat="mobile">Mobile</span></dd></div>
+              <div><dt>Papel</dt><dd>Solo</dd></div>
+              <div><dt>Stack</dt><dd>Flutter, Dart, Supabase, TMDB API, Provider, flutter_card_swiper, cached_network_image, google_fonts</dd></div>
+            </dl>
+          </header>
+          <div class="a3__grid">
+            <section class="cell">
+              <h4><i>1</i>Contexto</h4>
+              <p>App Flutter em que cada pessoa desliza filmes e séries (estilo Tinder) e, quando duas curtem o mesmo título, acontece um match. Projeto pessoal, usado por mim e pela minha namorada.</p>
+            </section>
+            <section class="cell">
+              <h4><i>2</i>Problema</h4>
+              <p>Decidir o que assistir em dupla ou em grupo gera discussão e demora. Duas pessoas precisam achar títulos que as duas queiram ver, sem listar e negociar opções à mão.</p>
+            </section>
+            <section class="cell">
+              <h4><i>3</i>Meta</h4>
+              <p>Cada pessoa indica seus gostos rápido (deslizar para curtir ou rejeitar) e o app mostra sozinho os títulos em comum.</p>
+            </section>
+            <section class="cell cell--wide">
+              <h4><i>4</i>O que foi feito</h4>
+              <ul>
+                <li>Cadastro e login por nome de usuário e senha (hash SHA-256), com tabela no Supabase.</li>
+                <li>Catálogo de filmes e séries populares em pt-BR, vindo da API do TMDB.</li>
+                <li>Tela de swipe com cards de pôster (curtir/rejeitar), sem repetir títulos já avaliados.</li>
+                <li>Detecção de match: ao curtir um título que outra pessoa também curtiu, o match é criado e um diálogo aparece.</li>
+                <li>Lista de matches com marcação de "já assistimos".</li>
+                <li>Avaliações por match, com nota e comentário de cada pessoa.</li>
+                <li>Tema escuro com acentos neon.</li>
+                <li>Chaves de API fora do código-fonte (--dart-define-from-file), com env.example.json como modelo.</li>
+              </ul>
+            </section>
+            <section class="cell">
+              <h4><i>5</i>Resultado</h4>
+              <p>App rodando no Android, funcionando perfeitamente.</p>
+            </section>
+
+            <figure class="cell cell--fig">
+              <div class="fig fig--trio">
+                <button class="zoom" type="button" data-zoom="assets/img/CineMatch/CineMatch%20Login.jpeg" aria-label="Ampliar a tela de login do CineMatch">
+                  <img src="assets/img/CineMatch/CineMatch%20Login.jpeg" alt="Tela de login do CineMatch, em tema escuro: logo de claquete, campos de nome e senha, botão Entrar e link para cadastro." width="657" height="1280" loading="lazy" decoding="async">
+                </button>
+                <button class="zoom" type="button" data-zoom="assets/img/CineMatch/CineMatch%20Match.jpeg" aria-label="Ampliar a tela de novo match do CineMatch">
+                  <img src="assets/img/CineMatch/CineMatch%20Match.jpeg" alt="Tela de swipe do CineMatch com o diálogo Novo Match: vocês dois querem assistir A Múmia, e o botão Continuar arrastando." width="590" height="1280" loading="lazy" decoding="async">
+                </button>
+                <button class="zoom" type="button" data-zoom="assets/img/CineMatch/CineMatch%20Review.jpeg" aria-label="Ampliar a tela de avaliações do CineMatch">
+                  <img src="assets/img/CineMatch/CineMatch%20Review.jpeg" alt="Tela de um match no CineMatch, com o pôster de O Jogo do Predador, o seletor Já assistimos e as avaliações com estrelas e comentário de cada pessoa." width="590" height="1280" loading="lazy" decoding="async">
+                </button>
+              </div>
+              <figcaption><b class="mono">Fig. 4</b><span>Login, match e avaliação, direto do celular. Clique para ampliar.</span></figcaption>
+            </figure>
+          </div>
+          <ul class="a3__foot">
+            <li><span class="mono">Código</span><a href="https://github.com/murilonetlink/CineMatch" target="_blank" rel="noopener">Ver no GitHub →</a></li>
+          </ul>
+        </div>
+      </dialog>
+
+      <dialog class="dossie" id="pasta-codexhq" aria-labelledby="pasta-codexhq-t">
+        <form method="dialog" class="dossie__bar"><span class="mono">Arquivo · folha 03</span><button class="dossie__x mono">Fechar ×</button></form>
+        <div class="a3__sheet">
+          <header class="a3__head">
+            <p class="a3__no"><span class="mono">A3</span><b>03</b></p>
+            <h3 class="a3__title" id="pasta-codexhq-t">CodexHQ: um terminal tático de heróis e vilões, com IA</h3>
+            <dl class="a3__meta">
+              <div><dt>Categoria</dt><dd><span class="cat" data-cat="acad">Acadêmico</span></dd></div>
+              <div><dt>Papel</dt><dd>Solo</dd></div>
+              <div><dt>Stack</dt><dd>R, Shiny, httr, jsonlite, plotly, dplyr, tidyr, markdown, CSS customizado, SuperHero API, Google Gemini API (gemini-2.0-flash)</dd></div>
+            </dl>
+          </header>
+          <div class="a3__grid">
+            <section class="cell">
+              <h4><i>1</i>Contexto</h4>
+              <p>Projeto da disciplina de Aplicações em R, na faculdade: uma aplicação web em R Shiny que busca dados de heróis e vilões via API e usa IA generativa (Gemini) para gerar perfis táticos e simular batalhas.</p>
+            </section>
+            <section class="cell">
+              <h4><i>2</i>Problema</h4>
+              <p>Os dados dos personagens (biografia, atributos de poder) ficam espalhados e são só números. Sem uma análise contextualizada, é difícil interpretá-los ou compará-los.</p>
+            </section>
+            <section class="cell">
+              <h4><i>3</i>Meta</h4>
+              <p>Uma aplicação interativa que consome APIs externas, trabalha com programação reativa e visualização de dados, e transforma dados brutos em análises legíveis com ajuda de IA.</p>
+            </section>
+            <section class="cell cell--wide">
+              <h4><i>4</i>O que foi feito</h4>
+              <ul>
+                <li>Integração com a SuperHero API (busca por nome e detalhes por ID) com httr e jsonlite, tratando erro de conexão, falha de autenticação e personagem não encontrado.</li>
+                <li>Tela de pesquisa com nome real, editora, primeira aparição, alinhamento e local de nascimento, mais um gráfico de barras interativo (plotly) com os powerstats.</li>
+                <li>Integração com a Gemini API: os dados vão num prompt estruturado e a IA (persona "CODEX", uma IA militar de análise tática) devolve um perfil tático e uma análise de ameaça em Markdown.</li>
+                <li>Simulador de batalha: com dois combatentes, a IA compara atributos e alinhamento, declara o vencedor e justifica.</li>
+                <li>Navegação entre telas (Pesquisar / Batalha) com reactiveValues, eventReactive e renderUI.</li>
+                <li>Interface em tema escuro, estilo "terminal cyber", com CSS próprio.</li>
+              </ul>
+            </section>
+            <section class="cell">
+              <h4><i>5</i>Resultado</h4>
+              <p>Aplicação funcional que combina duas APIs, visualização interativa e IA generativa numa única interface.</p>
+            </section>
+
+            <figure class="cell cell--fig">
+              <div class="fig">
+                <button class="zoom" type="button" data-zoom="assets/img/CodexHQ/CodexHQ%20Batalha.png" aria-label="Ampliar a captura de tela do CodexHQ">
+                  <img src="assets/img/CodexHQ/CodexHQ%20Batalha.png" alt="Tela de batalha do CodexHQ, em tema escuro: Iron Man contra Batman, botão Iniciar simulação e o resultado da análise da IA, com Iron Man como vencedor e os motivos em lista." width="1877" height="858" loading="lazy" decoding="async">
+                </button>
+              </div>
+              <figcaption><b class="mono">Fig. 5</b><span>Simulador de batalha: dois combatentes e a análise da IA. Clique para ampliar.</span></figcaption>
+            </figure>
+          </div>
+          <ul class="a3__foot">
+            <li><span class="mono">Código</span><a href="https://github.com/murilonetlink/CodexHQ" target="_blank" rel="noopener">Ver no GitHub →</a></li>
+          </ul>
+        </div>
+      </dialog>
+
+      <dialog class="dossie" id="pasta-bigdata" aria-labelledby="pasta-bigdata-t">
+        <form method="dialog" class="dossie__bar"><span class="mono">Arquivo · folha 04</span><button class="dossie__x mono">Fechar ×</button></form>
+        <div class="a3__sheet">
+          <header class="a3__head">
+            <p class="a3__no"><span class="mono">A3</span><b>04</b></p>
+            <h3 class="a3__title" id="pasta-bigdata-t">CVM Data Lake Explorer: dados da CVM em camadas, com dashboard</h3>
+            <dl class="a3__meta">
+              <div><dt>Categoria</dt><dd><span class="cat" data-cat="acad">Acadêmico</span></dd></div>
+              <div><dt>Papel</dt><dd>Em equipe; responsável por boa parte do código da plataforma</dd></div>
+              <div><dt>Stack</dt><dd>Python, PostgreSQL, SQLAlchemy, pandas, NumPy, Streamlit, Plotly, Jupyter Notebooks, Groq API (LLaMA 3.3 70B), python-dotenv</dd></div>
+            </dl>
+          </header>
+          <div class="a3__grid">
+            <section class="cell">
+              <h4><i>1</i>Contexto</h4>
+              <p>Projeto da disciplina Big Data for Finance (FAE Centro Universitário, Ciência de Dados para Negócios): pipeline em camadas (Bronze/Silver/Gold) com dados públicos da CVM e dashboard interativo em Streamlit.</p>
+            </section>
+            <section class="cell">
+              <h4><i>2</i>Problema</h4>
+              <p>Os demonstrativos das empresas abertas ficam na CVM em dezenas de CSVs por ano, com versões duplicadas, contas ausentes, nomes diferentes entre empresas e hierarquia contábil inconsistente. Comparar empresas ou setores exigia limpeza manual e cálculos repetitivos.</p>
+            </section>
+            <section class="cell">
+              <h4><i>3</i>Meta</h4>
+              <p>Transformar os dados brutos em uma base confiável e auditável, e entregar um dashboard em que qualquer pessoa analise uma empresa ou compare setores sem tratar os dados.</p>
+            </section>
+            <section class="cell cell--wide">
+              <h4><i>4</i>O que foi feito</h4>
+              <ul>
+                <li>Pipeline Medallion em PostgreSQL: Bronze (ingestão fiel da CVM), Silver (BP, DRE e DFC deduplicados, com hierarquia de contas e validações como Ativo = Passivo + PL) e Gold (tabela de indicadores).</li>
+                <li>Mais de 20 indicadores: rentabilidade, liquidez, endividamento, ciclos operacionais (PMRV, PME, PMPF) e capital de giro.</li>
+                <li>Dashboard Streamlit com 5 telas (Balanço, DRE, DFC, Indicadores e Comparativo), mais a tela "Sobre o Projeto" com fluxogramas.</li>
+                <li>Comparativo em 3 modos: empresa vs empresa, empresa vs mediana do setor (bandas P25–P75) e empresa vs todos os setores.</li>
+                <li>Heatmap por setor com z-score, invertido nos indicadores em que menor é melhor, em abas por grupo para leitura no celular.</li>
+                <li>Análise por IA em cada tela: o contexto sai dos dados e vai ao LLaMA 3.3 70B via Groq, só quando a pessoa pede.</li>
+                <li>Tema único para os gráficos, cache de consultas por TTL, glossário com tooltips e layout responsivo.</li>
+              </ul>
+              <p><b>Minha parte:</b> as telas de Balanço, DRE, DFC, Indicadores e Comparativo; o tema dos gráficos; o heatmap por setor; a responsividade mobile; o módulo de IA; e a tela "Sobre o Projeto".</p>
+            </section>
+            <section class="cell">
+              <h4><i>5</i>Resultado</h4>
+              <p>Dashboard funcional com dados reais da CVM. Qualquer empresa do banco já tem os indicadores calculados e pode ser comparada com seu setor em poucos cliques.</p>
+            </section>
+
+            <figure class="cell cell--fig">
+              <div class="fig">
+                <button class="zoom" type="button" data-zoom="assets/img/BigDataForFinance/Indicadores%20Financeiros.png" aria-label="Ampliar a captura de tela do dashboard">
+                  <img src="assets/img/BigDataForFinance/Indicadores%20Financeiros.png" alt="Tela de Indicadores Financeiros do dashboard, com a Petrobras: menu lateral com filtros, quatro medidores (margem líquida, ROE, liquidez corrente e endividamento geral) e os indicadores de rentabilidade abaixo." width="1919" height="913" loading="lazy" decoding="async">
+                </button>
+              </div>
+              <figcaption><b class="mono">Fig. 6</b><span>Tela de indicadores, com a Petrobras de exemplo. Clique para ampliar.</span></figcaption>
+            </figure>
+          </div>
+          <ul class="a3__foot">
+            <li><span class="mono">Código</span><a href="https://github.com/murilonetlink/BigData_For_Finance" target="_blank" rel="noopener">Ver no GitHub →</a></li>
+          </ul>
+        </div>
+      </dialog>
+    </div>
+  </div>
+</section>
+
+<!-- 06 · PALCO -->
+<section class="palco" id="palco" aria-labelledby="palco-t">
+  <div class="wrap palco__grid">
+    <figure class="clip rv">
+      <span class="tape tape--l" aria-hidden="true"></span><span class="tape tape--r" aria-hidden="true"></span>
+      <p class="clip__mast">Palco de inovação · SUCESU PR</p>
+      <button class="zoom" type="button" data-zoom="assets/img/Sucesu.jpg" aria-label="Ampliar a foto da SUCESU">
+        <span class="clip__photo">
+          <img src="assets/img/Sucesu.jpg" alt="Murilo falando ao microfone no palco da SUCESU PR; em primeiro plano, outro participante da mesa, desfocado. Foto em preto e branco." width="1498" height="962" loading="lazy" decoding="async">
+        </span>
+      </button>
+      <figcaption class="mono">SUCESU PR · 2025 · palco de inovação</figcaption>
+    </figure>
+
+    <div class="palco__text">
+      <p class="folio mono">p. 06</p>
+      <p class="tag mono">SUCESU 2025</p>
+      <h2 class="h2" id="palco-t">Mesa redonda: IA em Debate</h2>
+      <p>Apresentação no palco de inovação da SUCESU. Discuti os desafios técnicos do AIDoc Hub e como a IA generativa está mudando o fluxo de trabalho de quem desenvolve.</p>
+      <p><a href="#aidoc">← Voltar ao AIDoc Hub</a></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- 07 · CONTRACAPA -->
+<footer class="verso" id="contato">
+  <div class="wrap">
+    <p class="folio mono">p. 07 · contracapa</p>
+    <h2 class="verso__h">Tem um processo <span class="neon">bagunçado?</span> Me escreve.</h2>
+    <p class="verso__sub">Software, automação ou análise de dados, em projetos locais ou remotos.</p>
+
+    <ul class="verso__links">
+      <li><a href="mailto:murilosou15@gmail.com">murilosou15@gmail.com</a></li>
+      <li><a href="https://github.com/murilonetlink" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/murilonetlink" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+
+    <a class="coupon" href="assets/docs/Murilo%20Costa%20-%20CV.pdf" download>
+      <span class="mono">Recorte e leve</span>
+      <b>CV em PDF</b>
+      <span aria-hidden="true">↓</span>
+    </a>
+
+    <p class="verso__fim" aria-hidden="true">Fim.</p>
+    <p class="verso__fine mono">© <span id="ano">2026</span> Murilo Costa · Sem framework: HTML, CSS e um pouco de JS · Fim da edição 01</p>
+  </div>
+</footer>
+
+<dialog id="zoom" class="lb" aria-label="Imagem ampliada">
+  <form method="dialog"><button class="lb__x mono">Fechar ×</button></form>
+  <img alt="">
+</dialog>
+
+<script src="assets/js/noir.js" defer></script>
 </body>
 </html>
